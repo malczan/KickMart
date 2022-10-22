@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		3F0E66982904333C00128FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E66972904333C00128FA3 /* AppDelegate.swift */; };
-		3F0E669A2904333C00128FA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E66992904333C00128FA3 /* SceneDelegate.swift */; };
-		3F0E669C2904333C00128FA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E669B2904333C00128FA3 /* ViewController.swift */; };
-		3F0E669F2904333C00128FA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E669D2904333C00128FA3 /* Main.storyboard */; };
+		3F0E669C2904333C00128FA3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E669B2904333C00128FA3 /* LoginViewController.swift */; };
 		3F0E66A12904333E00128FA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E66A02904333E00128FA3 /* Assets.xcassets */; };
 		3F0E66A42904333E00128FA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E66A22904333E00128FA3 /* LaunchScreen.storyboard */; };
+		3F0E66AC2904354A00128FA3 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E66AB2904354A00128FA3 /* CustomTextField.swift */; };
+		3F0E66AE290442A600128FA3 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0E66AD290442A600128FA3 /* Colors.swift */; };
+		3F0E66B4290449E100128FA3 /* WHOOPASS.TTF in Resources */ = {isa = PBXBuildFile; fileRef = 3F0E66B3290449E100128FA3 /* WHOOPASS.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F0E66942904333C00128FA3 /* KicksMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KicksMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F0E66972904333C00128FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3F0E66992904333C00128FA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F0E669B2904333C00128FA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3F0E669E2904333C00128FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3F0E669B2904333C00128FA3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3F0E66A02904333E00128FA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0E66A32904333E00128FA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0E66A52904333E00128FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F0E66AB2904354A00128FA3 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		3F0E66AD290442A600128FA3 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3F0E66B3290449E100128FA3 /* WHOOPASS.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = WHOOPASS.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,47 @@
 			isa = PBXGroup;
 			children = (
 				3F0E66972904333C00128FA3 /* AppDelegate.swift */,
-				3F0E66992904333C00128FA3 /* SceneDelegate.swift */,
-				3F0E669B2904333C00128FA3 /* ViewController.swift */,
-				3F0E669D2904333C00128FA3 /* Main.storyboard */,
-				3F0E66A02904333E00128FA3 /* Assets.xcassets */,
 				3F0E66A22904333E00128FA3 /* LaunchScreen.storyboard */,
+				3F0E66A02904333E00128FA3 /* Assets.xcassets */,
+				3F0E66B02904449F00128FA3 /* Login */,
+				3F0E66B1290444AC00128FA3 /* CustomViews */,
+				3F0E66AF2904449000128FA3 /* Extensions */,
+				3F0E66B2290449A200128FA3 /* Fonts */,
 				3F0E66A52904333E00128FA3 /* Info.plist */,
 			);
 			path = KicksMart;
+			sourceTree = "<group>";
+		};
+		3F0E66AF2904449000128FA3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				3F0E66AD290442A600128FA3 /* Colors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3F0E66B02904449F00128FA3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3F0E669B2904333C00128FA3 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3F0E66B1290444AC00128FA3 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				3F0E66AB2904354A00128FA3 /* CustomTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		3F0E66B2290449A200128FA3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				3F0E66B3290449E100128FA3 /* WHOOPASS.TTF */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +160,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F0E66B4290449E100128FA3 /* WHOOPASS.TTF in Resources */,
 				3F0E66A42904333E00128FA3 /* LaunchScreen.storyboard in Resources */,
 				3F0E66A12904333E00128FA3 /* Assets.xcassets in Resources */,
-				3F0E669F2904333C00128FA3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +173,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3F0E669C2904333C00128FA3 /* ViewController.swift in Sources */,
+				3F0E669C2904333C00128FA3 /* LoginViewController.swift in Sources */,
+				3F0E66AE290442A600128FA3 /* Colors.swift in Sources */,
 				3F0E66982904333C00128FA3 /* AppDelegate.swift in Sources */,
-				3F0E669A2904333C00128FA3 /* SceneDelegate.swift in Sources */,
+				3F0E66AC2904354A00128FA3 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3F0E669D2904333C00128FA3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3F0E669E2904333C00128FA3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3F0E66A22904333E00128FA3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +320,6 @@
 				INFOPLIST_FILE = KicksMart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +347,6 @@
 				INFOPLIST_FILE = KicksMart/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
